@@ -2,6 +2,6 @@
 
 int main()
 {
-
+    cout << "welcome";
     return 0;
 }
