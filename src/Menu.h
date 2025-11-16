@@ -4,6 +4,6 @@
 class Menu
 {
 public:
-    Menu();
+    Menu(Inventory &main_inventory);
 };
 #endif
