@@ -24,6 +24,7 @@ public:
     string getGenre() const;
     string getPublisher() const;
     int getYear() const;
+
     // setters
     void setTitle(string &title);
     void setAuthor(string &author);
