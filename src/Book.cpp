@@ -22,5 +22,5 @@ void Book::setISBN(string &I) { ISBN = I; }
 void Book::setQuantity(int &q) { quantity = q; }
 void Book::setPrice(double &p) { price = p; }
 void Book::setGenre(string &g) { genre = g; }
-void Book::setPublisher(string &p) { publisher = p; }
+void Book::setPublisher(string &pub) { publisher = pub; }
 void Book::setYear(int &y) { year = y; }

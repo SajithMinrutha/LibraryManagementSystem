@@ -4,7 +4,7 @@
 
 int main()
 {
-    Inventory main_inventory;
-    Menu main_menu(const auto &main_inventory);
+    Inventory mainInventory;
+    Menu main_menu(Inventory mainInventory);
     return 0;
 }
