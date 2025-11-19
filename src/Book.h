@@ -28,7 +28,7 @@ public:
     // setters
     void setTitle(string &title);
     void setAuthor(string &author);
-    void setISBN(string &author);
+    void setISBN(string &ISBN);
     void setQuantity(int &quantity);
     void setPrice(double &price);
     void setGenre(string &genre);
