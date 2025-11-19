@@ -3,7 +3,7 @@
 #include "string.h"
 using std::string;
 
-void Inventory::addBook(string &t, string &a, string &I, int &q, double &p, string &g, string &pub, int &y) const
+void Inventory::addBook(const string &t, const string &a, const string &I, const int &q, const double &p, const string &g, const string &pub, const int &y)
 {
     // book object
     Book book;
@@ -18,7 +18,7 @@ void Inventory::addBook(string &t, string &a, string &I, int &q, double &p, stri
     book.setPublisher(pub);
     book.setYear(y);
 }
-void Inventory::removeBook() const
+void Inventory::removeBook()
 {
 }
 void Inventory::viewAllBooks() const

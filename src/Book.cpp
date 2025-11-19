@@ -1,9 +1,6 @@
 #include "Book.h"
-#include <iostream>
 #include <string>
 
-using std::cin;
-using std::cout;
 using std::string;
 
 // getters
@@ -16,11 +13,11 @@ string Book::getGenre() const { return genre; }
 string Book::getPublisher() const { return publisher; }
 int Book::getYear() const { return year; }
 // setters
-void Book::setTitle(string &t) { title = t; }
-void Book::setAuthor(string &a) { author = a; }
-void Book::setISBN(string &I) { ISBN = I; }
-void Book::setQuantity(int &q) { quantity = q; }
-void Book::setPrice(double &p) { price = p; }
-void Book::setGenre(string &g) { genre = g; }
-void Book::setPublisher(string &pub) { publisher = pub; }
-void Book::setYear(int &y) { year = y; }
+void Book::setTitle(const string &t) { title = t; }
+void Book::setAuthor(const string &a) { author = a; }
+void Book::setISBN(const string &I) { ISBN = I; }
+void Book::setQuantity(const int &q) { quantity = q; }
+void Book::setPrice(const double &p) { price = p; }
+void Book::setGenre(const string &g) { genre = g; }
+void Book::setPublisher(const string &pub) { publisher = pub; }
+void Book::setYear(const int &y) { year = y; }

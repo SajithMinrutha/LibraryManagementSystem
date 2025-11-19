@@ -1,38 +1,38 @@
 #ifndef BOOK_H
 #define BOOK_H
 #include <string>
-using std::string;
+
 class Book
 {
 private:
-    string title;
-    string author;
-    string ISBN;
+    std::string title;
+    std::string author;
+    std::string ISBN;
     int quantity;
     double price;
-    string genre;
-    string publisher;
+    std::string genre;
+    std::string publisher;
     int year;
 
 public:
     // getters
-    string getTitle() const;
-    string getAuthor() const;
-    string getISBN() const;
+    std::string getTitle() const;
+    std::string getAuthor() const;
+    std::string getISBN() const;
     int getQuantity() const;
     double getPrice() const;
-    string getGenre() const;
-    string getPublisher() const;
+    std::string getGenre() const;
+    std::string getPublisher() const;
     int getYear() const;
 
     // setters
-    void setTitle(string &title);
-    void setAuthor(string &author);
-    void setISBN(string &ISBN);
-    void setQuantity(int &quantity);
-    void setPrice(double &price);
-    void setGenre(string &genre);
-    void setPublisher(string &publisher);
-    void setYear(int &year);
+    void setTitle(const std::string &title);
+    void setAuthor(const std::string &author);
+    void setISBN(const std::string &ISBN);
+    void setQuantity(const int &quantity);
+    void setPrice(const double &price);
+    void setGenre(const std::string &genre);
+    void setPublisher(const std::string &publisher);
+    void setYear(const int &year);
 };
 #endif
