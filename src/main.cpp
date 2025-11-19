@@ -5,6 +5,7 @@
 int main()
 {
     Inventory mainInventory;
-    Menu main_menu(Inventory mainInventory);
+    Menu main_menu(mainInventory);
+    main_menu.runMenu();
     return 0;
 }
