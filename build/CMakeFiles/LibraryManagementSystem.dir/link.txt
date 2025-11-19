@@ -1,2 +1,0 @@
-/usr/bin/ar qc libLibraryManagementSystem.a CMakeFiles/LibraryManagementSystem.dir/src/Book.cpp.o CMakeFiles/LibraryManagementSystem.dir/src/Inventory.cpp.o CMakeFiles/LibraryManagementSystem.dir/src/Member.cpp.o CMakeFiles/LibraryManagementSystem.dir/src/Menu.cpp.o CMakeFiles/LibraryManagementSystem.dir/src/Validation.cpp.o
-/usr/bin/ranlib libLibraryManagementSystem.a

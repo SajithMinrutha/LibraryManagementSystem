@@ -1,5 +1,0 @@
-if(EXISTS "/Users/minrutha/Documents/CODING2025/LibraryManagementSystem/build/runTests[1]_tests.cmake")
-  include("/Users/minrutha/Documents/CODING2025/LibraryManagementSystem/build/runTests[1]_tests.cmake")
-else()
-  add_test(runTests_NOT_BUILT runTests_NOT_BUILT)
-endif()
