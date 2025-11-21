@@ -39,3 +39,34 @@
 
 # debug information files
 *.dwo
+# CMake build directories
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+
+# Ninja build files
+/.ninja_deps
+/.ninja_log
+
+# Additional ignores
+.DS_Store
+# macOS Trash
+.Trash-*
+# Python / editor files
+*.pyc
+*.pyo
+*.swp
+.idea/
+# Binaries and libraries
+/bin/
+/lib/
+# Test and temporary files
+/Testing/Temporary/
+# GoogleTest and dependency builds
+/googletest-build/
+/_deps/
+# Coverage files
+*.gcda
+*.gcno
