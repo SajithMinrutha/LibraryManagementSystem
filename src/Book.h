@@ -16,23 +16,23 @@ private:
 
 public:
     // getters
-    std::string getTitle() const;
-    std::string getAuthor() const;
-    std::string getISBN() const;
-    int getQuantity() const;
-    double getPrice() const;
-    std::string getGenre() const;
-    std::string getPublisher() const;
-    int getYear() const;
+    std::string getTitle() const noexcept;
+    std::string getAuthor() const noexcept;
+    std::string getISBN() const noexcept;
+    int getQuantity() const noexcept;
+    double getPrice() const noexcept;
+    std::string getGenre() const noexcept;
+    std::string getPublisher() const noexcept;
+    int getYear() const noexcept;
 
     // setters
-    void setTitle(const std::string &title);
-    void setAuthor(const std::string &author);
-    void setISBN(const std::string &ISBN);
-    void setQuantity(const int &quantity);
-    void setPrice(const double &price);
-    void setGenre(const std::string &genre);
-    void setPublisher(const std::string &publisher);
-    void setYear(const int &year);
+    void setTitle(const std::string &title) noexcept;
+    void setAuthor(const std::string &author) noexcept;
+    void setISBN(const std::string &ISBN) noexcept;
+    void setQuantity(const int &quantity) noexcept;
+    void setPrice(const double &price) noexcept;
+    void setGenre(const std::string &genre) noexcept;
+    void setPublisher(const std::string &publisher) noexcept;
+    void setYear(const int &year) noexcept;
 };
 #endif

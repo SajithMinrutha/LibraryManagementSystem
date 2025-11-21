@@ -13,13 +13,14 @@ private:
 
 public:
     // getters
-    std::string getName();
-    int getAge();
-    int getDateOfBirth();
+    std::string getName() const noexcept;
+    int getAge() const noexcept;
+    int getDateOfBirth() const noexcept;
+
     // setters
-    void setName(std::string &name);
-    void setAge(int &age);
-    void setDateOfBirth(int &dateOfBirth);
+    void setName(std::string &name) noexcept;
+    void setAge(int &age) noexcept;
+    void setDateOfBirth(int &dateOfBirth) noexcept;
 };
 
 #endif
