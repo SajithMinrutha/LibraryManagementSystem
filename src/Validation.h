@@ -5,6 +5,6 @@ class Validation
 {
 public:
     static int invalidChoiceCheck();
-    static int invaidInputCheck(std::string &title, std::string &author, std::string &ISBN, int &quantity, double &price, std::string &genre, std::string &publisher, int &year) const;
+    static int invaidInputCheck(std::string &title, std::string &author, std::string &ISBN, int &quantity, double &price, std::string &genre, std::string &publisher, int &year);
 };
 #endif
