@@ -68,6 +68,7 @@ void Menu::runMenu()
         }
         else if (answer == "3")
         {
+            currentInventory.printBookTableHeader();
             currentInventory.viewAllBooks();
         }
         else if (answer == "exit")

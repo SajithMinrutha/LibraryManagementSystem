@@ -1,6 +1,8 @@
 #include "Inventory.h"
 #include "Book.h"
 #include "string.h"
+#include <iostream>
+using std::cout;
 using std::string;
 
 void Inventory::addBook(const string &t, const string &a, const string &I, const int &q, const double &p, const string &g, const string &pub, const int &y)
@@ -17,10 +19,23 @@ void Inventory::addBook(const string &t, const string &a, const string &I, const
     book.setGenre(g);
     book.setPublisher(pub);
     book.setYear(y);
+
+    shelf[nextID] = book;
+    nextID++;
 }
+
 void Inventory::removeBook()
 {
 }
+void Inventory::printBookTableHeader() const noexcept
+{
+    std::cout << "Title\tAuthor\tISBN\tQuantity\tPrice\tGenre\tPublisher\tYear\n";
+}
 void Inventory::viewAllBooks() const
 {
+
+    for (const auto &[id, book] : shelf)
+    {
+        cout << book;
+    }
 }

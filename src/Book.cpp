@@ -22,3 +22,18 @@ void Book::setPrice(const double &p) noexcept { price = p; }
 void Book::setGenre(const string &g) noexcept { genre = g; }
 void Book::setPublisher(const string &pub) noexcept { publisher = pub; }
 void Book::setYear(const int &y) noexcept { year = y; }
+
+// overloader
+std::ostream &operator<<(std::ostream &os, const Book &b) noexcept
+{
+    os << b.title << "\t"
+       << b.author << "\t"
+       << b.ISBN << "\t"
+       << b.quantity << "\t"
+       << b.price << "\t"
+       << b.genre << "\t"
+       << b.publisher << "\t"
+       << b.year
+       << '\n';
+    return os;
+}

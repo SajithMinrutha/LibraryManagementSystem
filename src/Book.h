@@ -1,5 +1,6 @@
 #ifndef BOOK_H
 #define BOOK_H
+#include <iostream>
 #include <string>
 
 class Book
@@ -34,5 +35,8 @@ public:
     void setGenre(const std::string &genre) noexcept;
     void setPublisher(const std::string &publisher) noexcept;
     void setYear(const int &year) noexcept;
+
+    // overloader
+    friend std::ostream &operator<<(std::ostream &, const Book &book) noexcept;
 };
 #endif
