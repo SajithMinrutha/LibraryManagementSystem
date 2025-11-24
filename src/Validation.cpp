@@ -4,7 +4,7 @@
 using std::cout;
 using std::string;
 
-int Validation::invaidInputCheck(string &t, string &a, string &I, int &q, double &p, string &g, string &pub, int &y)
+int Validation::invaidInputCheck(string &t, string &a, string &I, int &q, double &p, string &g, string &pub, int &y) noexcept
 {
     if (t == "" || a == "" || I == "" || g == "" || pub == "")
     {

@@ -59,7 +59,7 @@ void Menu::runMenu()
             }
             else
             {
-                currentInventory.addBook(title, author, ISBN, quantity, price, genre, publisher, year);
+                currentInventory.setBook(title, author, ISBN, quantity, price, genre, publisher, year);
             }
         }
         else if (answer == "2")
@@ -68,8 +68,8 @@ void Menu::runMenu()
         }
         else if (answer == "3")
         {
-            currentInventory.printBookTableHeader();
-            currentInventory.viewAllBooks();
+            currentInventory.getBookTableHeader();
+            currentInventory.getAllBooks();
         }
         else if (answer == "exit")
         {

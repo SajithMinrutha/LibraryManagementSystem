@@ -5,7 +5,19 @@
 using std::cout;
 using std::string;
 
-void Inventory::addBook(const string &t, const string &a, const string &I, const int &q, const double &p, const string &g, const string &pub, const int &y)
+// members
+void Inventory::setMember(const std::string &member) noexcept
+{
+}
+
+void Inventory::removeMember() noexcept {}
+
+void Inventory::getAllMembers() const noexcept
+{
+}
+
+// books
+void Inventory::setBook(const string &t, const string &a, const string &I, const int &q, const double &p, const string &g, const string &pub, const int &y) noexcept
 {
     // book object
     Book book;
@@ -24,18 +36,25 @@ void Inventory::addBook(const string &t, const string &a, const string &I, const
     nextID++;
 }
 
-void Inventory::removeBook()
+void Inventory::removeBook() noexcept
 {
 }
-void Inventory::printBookTableHeader() const noexcept
-{
-    std::cout << "Title\tAuthor\tISBN\tQuantity\tPrice\tGenre\tPublisher\tYear\n";
-}
-void Inventory::viewAllBooks() const
+
+void Inventory::getAllBooks() const noexcept
 {
 
     for (const auto &[id, book] : shelf)
     {
         cout << book;
     }
+}
+
+// table headers
+void Inventory::getMemberTableHeader() const noexcept
+{
+    std::cout << "Title\tAuthor\tISBN\tQuantity\tPrice\tGenre\tPublisher\tYear\n";
+}
+void Inventory::getBookTableHeader() const noexcept
+{
+    std::cout << "Title\tAuthor\tISBN\tQuantity\tPrice\tGenre\tPublisher\tYear\n";
 }
