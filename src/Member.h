@@ -2,6 +2,7 @@
 #define MEMBER_H
 
 #include "Book.h"
+#include <iostream>
 #include <string>
 
 class Member
@@ -18,9 +19,12 @@ public:
     int getDateOfBirth() const noexcept;
 
     // setters
-    void setName(std::string &name) noexcept;
-    void setAge(int &age) noexcept;
-    void setDateOfBirth(int &dateOfBirth) noexcept;
+    void setName(const std::string &name) noexcept;
+    void setAge(const int &age) noexcept;
+    void setDateOfBirth(const int &dateOfBirth) noexcept;
+
+    // overloader
+    friend std::ostream &operator<<(std::ostream &os, const Member &member) noexcept;
 };
 
 #endif

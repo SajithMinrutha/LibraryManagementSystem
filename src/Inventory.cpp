@@ -1,6 +1,6 @@
 #include "Inventory.h"
 #include "Book.h"
-#include "string.h"
+#include <string.h>
 #include <iostream>
 using std::cout;
 using std::string;
@@ -14,6 +14,10 @@ void Inventory::removeMember() noexcept {}
 
 void Inventory::getAllMembers() const noexcept
 {
+    for (const auto &[id, member] : members)
+    {
+        cout << member;
+    }
 }
 
 // books
