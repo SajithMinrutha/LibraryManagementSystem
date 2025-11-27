@@ -37,6 +37,7 @@ if(BUILD_TESTS)
 
     add_executable(runTests
         tests/test_book.cpp
+        tests/test_member.cpp
     )
 
     target_link_libraries(runTests PRIVATE

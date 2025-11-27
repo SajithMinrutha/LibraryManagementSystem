@@ -56,7 +56,7 @@ void Inventory::getAllBooks() const noexcept
 // table headers
 void Inventory::getMemberTableHeader() const noexcept
 {
-    std::cout << "Title\tAuthor\tISBN\tQuantity\tPrice\tGenre\tPublisher\tYear\n";
+    std::cout << "Name\tAge\tDate of Birth\t";
 }
 void Inventory::getBookTableHeader() const noexcept
 {
