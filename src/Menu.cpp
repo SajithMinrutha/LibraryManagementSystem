@@ -20,8 +20,9 @@ void Menu::runMenu()
         string answer;
         cout << "\n----Welcome----\n";
         cout << "1.Add A Book\n";
-        cout << "2.Remove A Book\n";
-        cout << "3.View All Books\n";
+        cout << "2.Add a new member";
+        cout << "3.Remove A Book\n";
+        cout << "4.View All Books\n";
         cout << "Enter (1-3 or type exit): " << endl;
         cin >> answer;
 
@@ -64,9 +65,31 @@ void Menu::runMenu()
         }
         else if (answer == "2")
         {
-            currentInventory.removeBook();
+            string name;
+            int age;
+            int dateOfBirth;
+
+            cout << "\n 1.Enter the name of our new member: " << endl;
+            cin >> name;
+            cout << "\n 1.What is his age: " << endl;
+            cin >> age;
+            cout << "\n 1.What Is Date of Birth: " << endl;
+            cin >> dateOfBirth;
+            cout << "\n 1.What Is The Quantity: " << endl;
+            // if (Validation::invaidInputCheck(name, age, dateOfBirth))
+            // {
+            //     cout << "Invalid Input";
+            // }
+            // else
+            // {
+            //     currentInventory.setMember(name, age, dateOfBirth);
+            // }
         }
         else if (answer == "3")
+        {
+            currentInventory.removeBook();
+        }
+        else if (answer == "4")
         {
             currentInventory.getBookTableHeader();
             currentInventory.getAllBooks();

@@ -6,7 +6,7 @@ using std::cout;
 using std::string;
 
 // members
-void Inventory::setMember(const std::string &member) noexcept
+void Inventory::setMember(const std::string &member, const int &age, const int dateOfBirth) noexcept
 {
 }
 
