@@ -9,7 +9,7 @@ class Inventory
 private:
     int nextID = 1;
     std::map<int, Book> shelf;
-    std::map<int, Member> members;
+    std::map<int, Member> member;
 
 public:
     // getters

@@ -2,7 +2,7 @@
 #define STATE_H
 #include "Inventory.h"
 
-class State : Inventory
+class State
 {
 };
 

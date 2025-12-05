@@ -14,7 +14,7 @@ void Inventory::removeMember() noexcept {}
 
 void Inventory::getAllMembers() const noexcept
 {
-    for (const auto &[id, member] : members)
+    for (const auto &[id, member] : member)
     {
         cout << member;
     }

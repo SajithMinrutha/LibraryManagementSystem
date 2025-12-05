@@ -6,6 +6,14 @@ using std::string;
 string Member::getName() const noexcept { return name; }
 int Member::getAge() const noexcept { return age; }
 int Member::getDateOfBirth() const noexcept { return dateOfBirth; }
+void Member::getBorrowedBooks() const noexcept
+{
+    for (const auto &[id, borrowedBook] : borrowedBooks)
+    {
+        std::cout << id << "/n";
+        std::cout << borrowedBook;
+    }
+}
 
 // setters
 void Member::setName(const string &n) noexcept { name = n; }
