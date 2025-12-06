@@ -1,37 +1,42 @@
 #ifndef BOOK_H
 #define BOOK_H
+#include <iostream>
 #include <string>
-using std::string;
+
 class Book
 {
 private:
-    string title;
-    string author;
-    string ISBN;
+    std::string title;
+    std::string author;
+    std::string ISBN;
     int quantity;
     double price;
-    string genre;
-    string publisher;
+    std::string genre;
+    std::string publisher;
     int year;
 
 public:
     // getters
-    string getTitle() const;
-    string getAuthor() const;
-    string getISBN() const;
-    int getQuantity() const;
-    double getPrice() const;
-    string getGenre() const;
-    string getPublisher() const;
-    int getYear() const;
+    std::string getTitle() const noexcept;
+    std::string getAuthor() const noexcept;
+    std::string getISBN() const noexcept;
+    int getQuantity() const noexcept;
+    double getPrice() const noexcept;
+    std::string getGenre() const noexcept;
+    std::string getPublisher() const noexcept;
+    int getYear() const noexcept;
+
     // setters
-    void setTitle(string &title);
-    void setAuthor(string &author);
-    void setISBN(string &author);
-    void setQuantity(int &quantity);
-    void setPrice(double &price);
-    void setGenre(string &genre);
-    void setPublisher(string &publisher);
-    void setYear(int &year);
+    void setTitle(const std::string &title) noexcept;
+    void setAuthor(const std::string &author) noexcept;
+    void setISBN(const std::string &ISBN) noexcept;
+    void setQuantity(const int &quantity) noexcept;
+    void setPrice(const double &price) noexcept;
+    void setGenre(const std::string &genre) noexcept;
+    void setPublisher(const std::string &publisher) noexcept;
+    void setYear(const int &year) noexcept;
+
+    // overloader
+    friend std::ostream &operator<<(std::ostream &, const Book &book) noexcept;
 };
 #endif
