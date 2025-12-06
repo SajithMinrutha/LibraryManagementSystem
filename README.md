@@ -4,18 +4,18 @@ A simple yet robust Library Management System built in C++. This application pro
 
 ## 🌟 Features
 
-- **Book Management:** Add, remove, and view books in the inventory.
-- **Detailed Book Information:** Each book is stored with the following details:
-  - Title
-  - Author
-  - ISBN
-  - Quantity
-  - Price
-  - Genre
-  - Publisher
-  - Year of Publication
-- **Menu-Driven Interface:** A user-friendly and interactive menu to navigate through the application's features.
-- **Input Validation:** Ensures data integrity by validating user inputs.
+*   **Book Management:** Add, remove, and view books in the inventory.
+*   **Detailed Book Information:** Each book is stored with the following details:
+    *   Title
+    *   Author
+    *   ISBN
+    *   Quantity
+    *   Price
+    *   Genre
+    *   Publisher
+    *   Year of Publication
+*   **Menu-Driven Interface:** A user-friendly and interactive menu to navigate through the application's features.
+*   **Input Validation:** Ensures data integrity by validating user inputs.
 
 ## 🚀 Getting Started
 
@@ -23,33 +23,29 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- A C++ compiler (like GCC or Clang)
-- CMake (version 3.10 or higher)
+*   A C++ compiler (like GCC or Clang)
+*   CMake (version 3.10 or higher)
 
 ### Building and Running
 
 1.  **Clone the repository:**
-
     ```bash
     git clone https://github.com/your-username/LibraryManagementSystem.git
     cd LibraryManagementSystem
     ```
 
 2.  **Create a build directory:**
-
     ```bash
     mkdir build
     cd build
     ```
 
 3.  **Configure the project with CMake:**
-
     ```bash
     cmake ..
     ```
 
 4.  **Build the project:**
-
     ```bash
     make
     ```
@@ -63,10 +59,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 Upon running the application, you will be presented with a menu of options. You can choose to:
 
-- Add a new book to the inventory.
-- Remove an existing book from the inventory.
-- View a list of all books in the inventory.
-- Exit the application.
+*   Add a new book to the inventory.
+*   Remove an existing book from the inventory.
+*   View a list of all books in the inventory.
+*   Exit the application.
 
 Follow the on-screen prompts to perform the desired actions.
 
@@ -99,14 +95,11 @@ To run the tests, you first need to make sure you have enabled testing in your C
     # From the build directory
     ctest
     ```
-
     Or:
-
     ```bash
     ./runTests
     ```
-
-    _(Note: The test executable name may vary depending on the CMake configuration in `tests/CMakeLists.txt`)_
+    *(Note: The test executable name may vary depending on the CMake configuration in `tests/CMakeLists.txt`)*
 
 ## 📂 Project Structure
 
@@ -128,10 +121,10 @@ LibraryManagementSystem/
 
 ## 💡 Future Enhancements
 
-- **Member Management:** Implement functionality to add, remove, and manage library members.
-- **Loan System:** Allow members to borrow and return books.
-- **Search Functionality:** Implement search by title, author, or ISBN.
-- **Data Persistence:** Save the inventory and member data to a file (e.g., CSV or JSON) to persist between sessions.
+*   **Member Management:** Implement functionality to add, remove, and manage library members.
+*   **Loan System:** Allow members to borrow and return books.
+*   **Search Functionality:** Implement search by title, author, or ISBN.
+*   **Data Persistence:** Save the inventory and member data to a file (e.g., CSV or JSON) to persist between sessions.
 
 ## 🤝 Contributing
 
