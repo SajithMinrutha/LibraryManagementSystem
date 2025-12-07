@@ -20,10 +20,12 @@ void Menu::runMenu()
         string answer;
         cout << "\n----Welcome----\n";
         cout << "1.Add A Book\n";
-        cout << "2.Add a new member";
+        cout << "2.View All Books\n";
         cout << "3.Remove A Book\n";
-        cout << "4.View All Books\n";
-        cout << "Enter (1-3 or type exit): " << endl;
+        cout << "4.Add A New Member\n";
+        cout << "5.View All Members\n";
+        cout << "6.Remove A Member\n";
+        cout << "Enter (1-6 or type exit): " << endl;
         cin >> answer;
 
         if (answer == "1")
@@ -65,6 +67,15 @@ void Menu::runMenu()
         }
         else if (answer == "2")
         {
+            currentInventory.getBookTableHeader();
+            currentInventory.getAllBooks();
+        }
+        else if (answer == "3")
+        {
+            currentInventory.removeBook();
+        }
+        else if (answer == "4")
+        {
             string name;
             int age;
             int dateOfBirth;
@@ -85,14 +96,10 @@ void Menu::runMenu()
             //     currentInventory.setMember(name, age, dateOfBirth);
             // }
         }
-        else if (answer == "3")
+        else if (answer == "5")
         {
-            currentInventory.removeBook();
-        }
-        else if (answer == "4")
-        {
-            currentInventory.getBookTableHeader();
-            currentInventory.getAllBooks();
+            currentInventory.getMemberTableHeader();
+            currentInventory.getAllMembers();
         }
         else if (answer == "exit")
         {

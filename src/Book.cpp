@@ -29,7 +29,7 @@ std::ostream &operator<<(std::ostream &os, const Book &b) noexcept
     os << b.title << "\t"
        << b.author << "\t"
        << b.ISBN << "\t"
-       << b.quantity << "\t"
+       << b.quantity << "\t\t"
        << b.price << "\t"
        << b.genre << "\t"
        << b.publisher << "\t"
