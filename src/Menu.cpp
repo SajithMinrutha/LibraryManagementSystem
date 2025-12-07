@@ -101,6 +101,10 @@ void Menu::runMenu()
             currentInventory.getMemberTableHeader();
             currentInventory.getAllMembers();
         }
+        else if (answer == "6")
+        {
+            currentInventory.removeMember();
+        }
         else if (answer == "exit")
         {
             cout << "\nGood Bye!\n";
