@@ -2,6 +2,7 @@
 #define BOOK_H
 #include <iostream>
 #include <string>
+#include "Member.h"
 
 class Book
 {
@@ -13,10 +14,12 @@ private:
     double price;
     std::string genre;
     std::string publisher;
+    Member currentBorrower;
     int year;
 
 public:
     // getters
+    Member getCurrentBorrower() const noexcept; // yet to implement
     std::string getTitle() const noexcept;
     std::string getAuthor() const noexcept;
     std::string getISBN() const noexcept;
@@ -27,6 +30,7 @@ public:
     int getYear() const noexcept;
 
     // setters
+    void setCurrentBorrower(Member &currentBorrower) noexcept; // yet to implement
     void setTitle(const std::string &title) noexcept;
     void setAuthor(const std::string &author) noexcept;
     void setISBN(const std::string &ISBN) noexcept;
