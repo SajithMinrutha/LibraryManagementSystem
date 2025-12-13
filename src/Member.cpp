@@ -10,7 +10,7 @@ void Member::getBorrowedBooks() const noexcept
 {
     for (const auto &[id, borrowedBook] : borrowedBooks)
     {
-        std::cout << id << "/n";
+        std::cout << id << "/n" << std::endl;
         std::cout << borrowedBook;
     }
 }
