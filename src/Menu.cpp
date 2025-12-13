@@ -53,10 +53,10 @@ void Menu::runMenu()
             cin >> genre;
             cout << "\n 1.Who Is The Publisher: " << endl;
             cin >> publisher;
-            cout << "\n 1.What Is The Realsed Year: " << endl;
+            cout << "\n 1.What Is The Released Year: " << endl;
             cin >> year;
 
-            if (Validation::invaidInputCheck(title, author, ISBN, quantity, price, genre, publisher, year))
+            if (Validation::invalidInputCheck(title, author, ISBN, quantity, price, genre, publisher, year))
             {
                 cout << "Invalid Input";
             }

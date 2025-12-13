@@ -19,7 +19,7 @@ private:
 
 public:
     // getters
-    Member getCurrentBorrower() const noexcept; // yet to implement
+    Member getCurrentBorrower() const noexcept;
     std::string getTitle() const noexcept;
     std::string getAuthor() const noexcept;
     std::string getISBN() const noexcept;
