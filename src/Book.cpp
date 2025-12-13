@@ -4,6 +4,7 @@
 using std::string;
 
 // getters
+Member Book::getCurrentBorrower() const noexcept { std::cout << currentBorrower; }
 string Book::getTitle() const noexcept { return title; }
 string Book::getAuthor() const noexcept { return author; }
 string Book::getISBN() const noexcept { return ISBN; }
